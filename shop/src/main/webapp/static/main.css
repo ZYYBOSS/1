@@ -1,0 +1,71 @@
+input{
+  background: blue;
+}
+
+input{
+  background: yellow;
+}
+/*选择器：
+1,类型选择器：选择html中的tage
+2,通配符选择器：  *{}
+3,id选择器： 元素中的id属性，只能有一个           <input id = "name">
+4,class选择器： .name{}
+            元素中的class属性，可以有多个class    <input class = "name">
+5,伪类选择器：并不在页面上真正存在（不在dom树）         (a标签为超链接)
+             比如表示这个网页访问过之后会变颜色，鼠标移动到此时的颜色，点击时颜色……
+         js中：<a href ="http://www.baidu.com" >百度</a>
+         css中：
+                    a：link{color：blue；}
+                    a:visited{color：red；}
+6,伪元素：
+        <p>巴拉巴拉</p>
+        Css中:         p（必须是类名或通配符）::first-letter {color:red}
+        结果第一个字母变成了红色，但是并不存在“第一个字母”这种东西
+
+        .name.password{background:red;}（这里省略了通配符）
+
+7,[id] ：带有id这个属性的
+         波浪线~表示包含了某个词
+         各种（尾包含某个词……）
+*/
+
+/*
+可以同时改变两个，在两个选择器之间用逗号隔开
+p,a,.name{background:red;}
+
+用空格表示选择器的关系（空格表示子孙关系）
+eg：<div>
+        <a></a>
+    </div>
+只想选择在div下面的a
+div a{background:red}
+
+大于号：只能是其“子类”，不可以是别的
+
+加号表示同级别的（兄弟类型）
+*/
+
+
+
+/*
+事件（与网路的交互）：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/

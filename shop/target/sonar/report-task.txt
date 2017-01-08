@@ -1,0 +1,5 @@
+projectKey=com.java2:shop
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/com.java2:shop
+ceTaskId=AVl4nKH5I4kxwLu6YDU2
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVl4nKH5I4kxwLu6YDU2

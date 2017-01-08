@@ -23,24 +23,26 @@ public class UserController {
 	public List<UserDTO> getUsers(){
 		return userService.getUsers();
 	}
-	@RequestMapping(path = "postUser", method = RequestMethod.POST)
-	public void addPerson(@RequestBody UserDTO user) {
+	
+	@RequestMapping(path = "", method = RequestMethod.POST)
+	public void addUser(@RequestBody UserDTO user) {
 		userService.addUser(user);
 	}
 	
-	@RequestMapping(path = "deleteUser/{id}", method = RequestMethod.DELETE)
-	public void deletePerson(@PathVariable Integer id) {
+	@RequestMapping(path = "/{id}", method = RequestMethod.DELETE)
+	public void deletePerson(@PathVariable Long id) {
 		userService.deleteUser(id);
 	}
 	
-	@RequestMapping(path = "updateUser", method = RequestMethod.PUT)
-	public void uptatePerson(@RequestBody UserDTO user) {
+	@RequestMapping(path = "", method = RequestMethod.PUT)
+	public void uptateUser(@RequestBody UserDTO user) {
 		userService.updateUser(user);
 	}
 
 	public UserService getUserService() {
 		return userService;
 	}
+	
 	public void setUserService(UserService userService) {
 		this.userService = userService;
 	}

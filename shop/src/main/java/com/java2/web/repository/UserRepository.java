@@ -15,21 +15,20 @@ public class UserRepository implements IUserRepositiory {
 	EntityManager em;
 	
 	public List<UserEntity> getUsers(){
-		
 		return em.createQuery("from UserEntity",UserEntity.class).getResultList();
-		
 	}
 	
 	public void addUser(UserEntity user){
 		em.persist(user);
 	}
+	
 	@Override
-	public void deleteUser(Integer id) {
+	public void deleteUser(Long id) {
 		em.remove(em.find(UserEntity.class, id));
 	}
 
 	@Override
-	public UserEntity getUserById(Integer id){
+	public UserEntity getUserById(Long id){
 		return em.find(UserEntity.class, id);
 	}
 
@@ -37,5 +36,6 @@ public class UserRepository implements IUserRepositiory {
 	public void updateUser(UserEntity user) {
 		em.merge(user);
 	}
+
 
 }
